@@ -191,7 +191,7 @@ func ScaricaHtmlDaTxt() {
 
 func ReadFileLineByLine(fp string, output string) {
 	//file, err := os.Open(fp)
-	file, err := os.Open("./pippo.txt")
+	file, err := os.Open(fp)
 	if err != nil {
 		log.Fatal(err)
 	}
