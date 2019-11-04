@@ -77,7 +77,7 @@ func doAnAction(ask func() string) {
 func askWhatToDo() (result string) {
     prompt := promptui.Select{
         Label: "Cosa vuoi fare?",
-        Items: []string{"Concatena Files", "Allinea contributi quota A", "Esci"},
+        Items: []string{"Concatena Files", "Esci"},
     }
     _, result, err := prompt.Run()
     if err != nil {
